@@ -2,15 +2,13 @@ package com.example.newclass;
 import java.util.Scanner;
 public class main {
     public static void main(String[] args) {
-        int x, y, sum;
-        Scanner myObj = new Scanner(System.in); // Create a Scanner object
-        System.out.println("Type a number:");
-        x = myObj.nextInt(); // Read user input
-
-        System.out.println("Type another number:");
-        y = myObj.nextInt(); // Read user input
-
-        sum = x + y;  // Calculate the sum of x + y
-        System.out.println("Sum is: " + sum);
+        System.out.println("Enter your grade: ");
+        Scanner scanner = new Scanner(System.in);
+        int grade = scanner.nextInt();
+        if(grade > 90){
+            System.out.println("Wow! you did well!");
+        }else{
+            System.out.println("Not bad, but you can do better next time!");
+        }
     }
 }
